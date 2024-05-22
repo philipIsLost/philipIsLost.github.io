@@ -34,6 +34,10 @@
     background-color: white;
 }
 
+.mobile-header {
+    display: none;
+}
+
 nav {
     position: fixed;
     margin: 0;
@@ -50,21 +54,49 @@ nav li {
     right: 3rem;
 }
 
+.references img {
+    display: none;
+}
+
 .references {
     display: flex;
     gap: 1rem;
     justify-content: center;
     align-items: center;
 }
+
 .logo-colmarAcademy{
     display: flex;
-    gap: 0rem;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
 }
 
 @media screen and (max-device-width: 480px) {
-   
+  
+    .desktop {
+        display: none;
+    }
+
+     .mobile-header {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 8rem;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 5000;
+        background-color: white;
+    }
+
+    .mobile-header img {
+        width: auto;
+        height: 6.25rem;
+    }
+
+
   }
 
 /*Part1*/
