@@ -404,6 +404,7 @@ nav li {
     .childp2 img{
         padding: 1rem;
         height: auto;
+        width: 100%;
     }
 
     .childp2 p {
