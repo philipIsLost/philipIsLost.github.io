@@ -83,7 +83,7 @@ nav li {
         justify-content: space-around;
         flex-wrap: wrap;
         align-items: center;
-        height: 8rem;
+        height: 4rem;
         width: 100%;
         position: fixed;
         top: 0;
@@ -93,7 +93,7 @@ nav li {
 
     .mobile-header img {
         width: auto;
-        height: 6.25rem;
+        height: 3.25rem;
     }
 
 
@@ -108,7 +108,7 @@ nav li {
     display: flex;
     box-sizing: border-box;
     align-items: center;
-    margin-top: 8rem;
+    top: 160rem;
 }
 
 .banner{
@@ -162,6 +162,7 @@ nav li {
    
     body {
         padding-top: 4rem;
+        width: 100%;
     }
 
     .part1-desktop {
@@ -172,48 +173,48 @@ nav li {
         display: flex;
         flex-direction: column;
         width: 100%;
+        margin-top: 4rem;
 
     }
 
-    .part1-mobile .banner-mobile {
+    .part1-mobile .banner-mobile img{
         height: auto;
         width: 100%;
     }
 
     .part1-text-mobile {
-        width: 100%;
         background-color: #d8d8d8;
         padding: 4rem 2rem;
     }
 
     .part1-text-mobile h1 {
        /* width: 56.25rem; */
-        font-size: 5rem;
+        font-size: 3.5rem;
         font-family: 'Archivo Black';
         font-weight: 1000;
         color: #4a4a4a;
-        margin-bottom: 4rem;
-        line-height: 6.25rem;
+        margin-bottom: 2rem;
+        line-height: 5.25rem;
     }
     
     .part1-text-mobile h3 {
-        width: 50rem;
-        font-size: 2.8125rem;
+        width: 100%;
+        font-size: 2rem;
         font-family: 'Archivo Black';
         font-weight: lighter;
         color: #4a4a4a;
-        margin-bottom: 4rem;
+        margin-bottom: 1.5rem;
         line-height: 3.75rem;
     }
     
     .part1-text-mobile button {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-family: 'Archivo Black';
         width: 90%;
         padding: 0.5rem 0rem;
         background-color: #4a4a4a;
         color: #fff;
-        line-height: 6.25rem;
+        line-height: 4.25rem;
         width: 100%;
     }
 }
@@ -404,6 +405,30 @@ nav li {
         padding: 1rem;
         height: auto;
     }
+
+    .childp2 p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.375rem;
+        color: #6a6a6a;
+        max-width: 25rem;
+    }
+
+    .childp2 h3 {
+        color: #4a4a4a;
+        font-family: 'Archivo Black';
+        font-size: xx-large;
+    }
+
+    .childp2 a {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.375rem;
+        color: #4a90e2;
+        padding-bottom: 2rem;
+    }
+
+    .childp2 .textbox {
+        line-height: 3.125rem;
+    }
 }
 
 /*Part3*/
@@ -475,14 +500,53 @@ nav li {
     .part3-desktop {
         display: none;
     }
+
+    .part3-mobile  {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .part3-mobile h1 {
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-size: 3.375rem;
+        font-family: 'Archivo Black';
+        color: #4a4a4a;
+
+    }
+
+    .sendhelp-mobile {
+        padding-bottom: 2rem;
+        border-bottom:#d8d8d8 solid 0.02rem;
+    }
+
+    .child-mobile {
+        background-color: #d8d8d8;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        margin-bottom: 0.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        
+    }
+
+    .child-mobile h3 {
+        padding-left: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: x-large;
+        font-weight: 1000;
+        color: #4a4a4a;
+    }
 }
 
 /*Part4*/
-.part4 {
+.part4-desktop {
     border-bottom:  #d8d8d8 solid 0.1875rem;
 }
 
-.part4 h1 {
+.part4-desktop h1 {
     text-align: center;
     padding-top: 4rem;
     font-size: 4.375rem;
@@ -573,7 +637,44 @@ nav li {
     padding: 2rem;
 }
 
+.part4-mobile {
+    display: none;
+}
 
+@media screen and (max-width: 700px){
+    .part4-desktop {
+        display: none;
+    }
+
+    .part4-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .part4-mobile h1 {
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-size: 3.375rem;
+        font-family: 'Archivo Black';
+        color: #4a4a4a;
+    }
+
+    .part4-mobile video {
+        width: 100%;
+        height: auto;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+html,body
+   {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
 
 /*Footer*/
 footer {
@@ -591,6 +692,10 @@ footer {
     color: #6a6a6a;
 }
 
+.idwddam {
+    display: none;
+}
+
 .idc {
     position: relative;
     right: 3rem;    
@@ -600,6 +705,28 @@ footer {
     color: #6a6a6a;
 }
 
+@media screen and (max-width: 700px){
+    .idc {
+        display: none;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .idwddam {
+        display: inline;
+        margin-left: 1rem !important;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.125rem;
+        color: #6a6a6a;
+    }
+
+    footer {
+        margin-bottom: 1rem !important;
+    }
+
+}
 
 
 
